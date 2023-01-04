@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/soumyajit4419/portfolio/master/src/Assets/Soumyajit_Behera-BIT_MESRA.pdf";
+  "https://doc-04-4g-docs.googleusercontent.com/docs/securesc/q3qqbfsjrpr6hqlvvtoc36cuuci4tsg4/mnoao08g80cvq19s1fvoej6bks270c7a/1672856550000/02121648304865362009/10016175678520559292Z/1X3rxH7wt9O9e6hZ0ujm8yA8B_luVL0Wt?e=download&uuid=3d940295-50e0-4065-9203-8a89d12a9386&nonce=mrr4l652i7ees&user=10016175678520559292Z&hash=1mlgqtip6d46b5rbpcnjvl732osinvqe";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -22,17 +22,7 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+        
 
         <Row className="resume">
           <Document file={resumeLink} className="d-flex justify-content-center">
@@ -43,7 +33,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={resumeLink}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
